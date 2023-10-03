@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Css Bolb Effect</title>
+</head>
+<style>
+    *{
+        margin: 0;
+        padding: 0;
+        font-family: 'Croissant One',  Helvetica, sans-serif;
+    }body{
+        height: 100%;
+        width: 100%;
+        background: linear-gradient(to right, #14ABCF, #8D06D2);
+    }
+    header{
+        padding-top: 2%;
+        height: 100px;
+        text-align: center;
+        color: #fff;
+    }
+    .main{
+        height: 60%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+     .bolb{
+        height: 300px;
+        width: 300px;
+        margin-top: 100px;
+        box-shadow: 0 0 2rem rgb(255, 255, 255);
+        border-radius: 63% 37% 30% 70% / 56% 51% 49% 44%;
+        overflow: hidden; 
+        background-image: url(boy.jpg);
+        background-position: center;
+        background-size: cover;
+        animation: bolb 8s infinite ease-in;
+    }
+    @keyframes bolb {
+  0%   {border-radius: 48% 52% 53% 47% / 55% 58% 42% 45%;}
+  50%  {border-radius: 37% 63% 53% 47% / 61% 36% 64% 39%;}
+  100% {border-radius: 48% 52% 53% 47% / 55% 58% 42% 45%;}
+}
+</style>
+<body>
+    <header>
+        <h1>Css bolb Animation</h1>
+        <h3>Pro-code Academy</h3>
+    </header>
+    <div class="main">
+        <div class="bolb">
+        </div>
+    </div>
+</body>
+</html>
